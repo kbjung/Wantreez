@@ -2,7 +2,7 @@
  원트리즈 뮤직
 
 ### Crawling [[상세내용]](https://github.com/kbjung/Wantreez/tree/main/Crawling)
-2022년 게시글 정보 수집
+2022년 경기도 해외 SNS 게시글 정보 수집
 + Blog [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/blog_crawling.ipynb)
   - 게시글 날짜, 제목, 링크 수집
   - 조회수, 좋아요 수, 공유 수, 댓글 수, 팔로워 수 는 '0' 값으로 채운 특성으로 만듬.(없는 정보)
