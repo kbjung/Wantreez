@@ -1,0 +1,10 @@
+import cal
+cc = cal.FourCal()
+a = cc.plus(1,2)
+print(a)
+print(a.first)
+print(a.second)
+b = cc.minus(2, 1)
+print(b)
+print(b.first)
+print(b.second)
