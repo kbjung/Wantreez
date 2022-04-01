@@ -1,5 +1,5 @@
 ## 💼 Wantreez
-원트리즈 뮤직
+원트리즈 뮤직(2022.03.02 ~ )
 
 ### Crawling [[상세내용]](https://github.com/kbjung/Wantreez/tree/main/Crawling)
 2022년 경기도 해외 SNS 게시글 정보 수집
