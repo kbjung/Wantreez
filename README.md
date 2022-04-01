@@ -20,6 +20,6 @@
   - 게시글 날짜, 내용, 조회수, 좋아요 수, 공유 수, 댓글 수, 팔로워 수, 게시글 링크 수집
   - 이슈) 사이트 접속이 느림 => 사이트 로드 시간 텀을 설정.
 + 경기관광포털 해당 검색어 사진 다운 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/pic_down/crawling_pic(ggtour).ipynb)
-  - 경기관광포털>포토갤러리 : https://ggtour.or.kr/info/board_photo.php?tsort=1&msort=160
+  - 경기관광포털 > 포토갤러리 : https://ggtour.or.kr/info/board_photo.php?tsort=1&msort=160
 + 국가문화유산 사진 다운 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/pic_down/crawling_pic(heritage).ipynb)
   - 국가문화유산 : https://www.heritage.go.kr/main/
