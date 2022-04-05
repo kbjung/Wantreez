@@ -28,4 +28,5 @@
   - 국가문화유산 : https://www.heritage.go.kr/main/
 
 #### 2022년 음원 사이트 Top100 수집
-+ Melon [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/melon_crawling.ipynb)
++ Melon [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/melon_crawling.ipynb)
++ Genie [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/genie_crawling.ipynb)
