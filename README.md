@@ -27,7 +27,7 @@
 + 국가문화유산 사진 다운 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/pic_down/crawling_pic(heritage).ipynb)
   - 국가문화유산 : https://www.heritage.go.kr/main/
 
-#### 2022년 음원 사이트 Top100 수집
+#### 2022년 음원 사이트 Top100 수집 [[상세내용]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
 + Melon
   - 실시간 일간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_melon.ipynb)
   - 과거 주간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/week_melon.ipynb)
