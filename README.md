@@ -1,8 +1,8 @@
 ## 💼 Wantreez
 원트리즈 뮤직(2022.03.02 ~ )
 
-### Crawling [[상세내용]](https://github.com/kbjung/Wantreez/tree/main/Crawling)
-#### 2022년 경기도 해외 SNS 게시글 정보 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido)
+### 🐈 Crawling [[상세내용]](https://github.com/kbjung/Wantreez/tree/main/Crawling)
+#### 💾 2022년 경기도 해외 SNS 게시글 정보 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido)
 + Blog [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/blog_crawling.ipynb)
   - 게시글 날짜, 제목, 링크 수집
   - 조회수, 좋아요 수, 공유 수, 댓글 수, 팔로워 수 는 '0' 값으로 채운 특성으로 만듬.(없는 정보)
@@ -27,7 +27,7 @@
 + 국가문화유산 사진 다운 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/crawling_pic(heritage).ipynb)
   - 국가문화유산 : https://www.heritage.go.kr/main/
 
-#### 2022년 음원 사이트 Top100 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
+#### 💾 2022년 음원 사이트 Top100 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
 + Melon
   - 실시간 일간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_melon.ipynb)
   - 과거 주간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/week_melon.ipynb)
