@@ -1,0 +1,6 @@
+test google account
+id : testwantreez001@gmail.com
+password : love1357!!
+name : 원여습
+birth : 1980.5.23
+bio : male
