@@ -69,7 +69,7 @@ def crawling():
 
     print(f"{file_name} 파일 생성 완료")
     
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    msg = ctypes.windll.user32.MessageBoxW(None, f'Melon 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # 일정 시간마다 반복
 job = schedule.every().day.at("11:02").do( crawling )
