@@ -3,6 +3,7 @@
 
 ### 🐈 Crawling [[상세내용]](https://github.com/kbjung/Wantreez/tree/main/Crawling)
 #### 💾 2022년 경기도 해외 SNS 게시글 정보 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido)
++ To do list 📃[notion](https://www.notion.so/38f59d8d4f474ed4b3a52fad72885683)
 + Blog [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/blog_crawling.ipynb)
   - 게시글 날짜, 제목, 링크 수집
   - 조회수, 좋아요 수, 공유 수, 댓글 수, 팔로워 수 는 '0' 값으로 채운 특성으로 만듬.(없는 정보)
@@ -28,6 +29,7 @@
   - 국가문화유산 : https://www.heritage.go.kr/main/
 
 #### 💾 2022년 음원 사이트 Top100 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
++ 내용 정리 ✍[notion](https://www.notion.so/2ca2f19dfdd54028b263e2f41760f602)
 + Melon
   - 실시간 일간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_melon.ipynb)
   - 과거 주간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/week_melon.ipynb)
@@ -41,3 +43,8 @@
   - 실시간 일간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_flo.ipynb)
 + Vibe
   - 실시간 일간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_vibe.ipynb)
+
+#### 💾 인천시 이벤트 댓글 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/incheon)
++ 내용 정리 ✍[notion](https://www.notion.so/af8ebd471778439eb7be4b770fda9f94)
++ 네이버 블로그(진행중....⏳)
+  - 2022.02.25 이벤트 글 테스트 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/naver_blog.ipynb)
