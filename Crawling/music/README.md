@@ -1,4 +1,5 @@
-#### 2022년 음원 사이트 Top100 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
+#### 💾 2022년 음원 사이트 Top100 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
++ 내용 정리 ✍[notion](https://www.notion.so/2ca2f19dfdd54028b263e2f41760f602)
 + Melon
   - 실시간 일간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_melon.ipynb)
   - 과거 주간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/week_melon.ipynb)
