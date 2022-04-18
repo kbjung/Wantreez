@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import requests
 from datetime import datetime
-import time, os, schedule, ctypes
+import time, os, schedule, ctypes, random
 
 # Flo
 def flo_crawling():
