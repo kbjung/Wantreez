@@ -40,6 +40,8 @@
   - 실시간 일간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_flo.ipynb)
 + Vibe
   - 실시간 일간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_vibe.ipynb)
++ 4개 음원 사이트
+  - 실시간 일간(매일 1번 자동 실행) [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
 
 #### 💾 인천시 이벤트 댓글 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/incheon)
 + 내용 정리 ✍[notion](https://www.notion.so/af8ebd471778439eb7be4b770fda9f94)
