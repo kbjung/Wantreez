@@ -13,3 +13,5 @@
   - 실시간 일간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_flo.ipynb)
 + Vibe
   - 실시간 일간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_vibe.ipynb)
++ 4개 음원 사이트
+  - 실시간 일간(매일 1번 자동 실행) [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
