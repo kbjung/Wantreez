@@ -50,7 +50,7 @@
   - 이벤트 글 테스트 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/naver_blog.ipynb)
 + 페이스북(진행중...⏳)
   - 테스트 코드 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/test_insta.ipynb)
-  - 2022.03.29 이벤트 글 테스트[code](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/facebook.ipynb)
+  - 2022.03.29 이벤트 글 테스트 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/facebook.ipynb)
 + 인스타(진행중...⏳)
   - 테스트 코드 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/test_naver_blog.ipynb)
   - 2022.02.25 이벤트 글 테스트 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/insta.ipynb)
