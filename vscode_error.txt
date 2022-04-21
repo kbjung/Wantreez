@@ -1,6 +1,0 @@
-running cells with 'python 3.8.8 ('base')' requires ipykernel package installed or requires an update.
-
-
-Running cells with 'Python 3.8.8 ('base')' requires ipykernel package.
-Run the following command to install 'ipykernel' into the Python environment. 
-Command: 'conda install -n base ipykernel --update-deps --force-reinstall'
