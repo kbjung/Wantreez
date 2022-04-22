@@ -25,5 +25,8 @@
 + Soribada
   - 실시간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_soribada.ipynb)
   - 실시간 자동 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_soribada.py)
+  - 과거 일간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/day_soribada.ipynb)
+  - 과거 주간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/week_soribada.ipynb)
+  - 과거 월간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/month_soribada.ipynb)
 + 6개 음원 사이트
   - 실시간 자동(매일 1번 자동 실행) [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
