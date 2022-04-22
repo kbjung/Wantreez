@@ -19,7 +19,9 @@
   - 로그인O(아이디, 비밀번호 입력 방식. 보안상)
   - 게시글 날짜, 내용, 조회수, 좋아요 수, 공유 수, 댓글 수, 팔로워 수, 게시글 링크 수집
   - 이슈) 사이트 접속이 느림 => 사이트 로드 시간 텀을 설정.
-+ 경기관광포털 해당 검색어 사진 다운 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/crawling_pic(ggtour).ipynb)
-  - 경기관광포털 > 포토갤러리 : https://ggtour.or.kr/info/board_photo.php?tsort=1&msort=160
++ 경기관광포털 사진 다운 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/crawling_pic(ggtour).ipynb)
+  - 경기관광포털 > 포토갤러리(url) : https://ggtour.or.kr/info/board_photo.php?tsort=1&msort=160
+  - 검색어 설정하면 해당 검색어 결과 사진 자동 다운
 + 국가문화유산 사진 다운 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/crawling_pic(heritage).ipynb)
-  - 국가문화유산 : https://www.heritage.go.kr/main/
+  - 국가문화유산(url) : https://www.heritage.go.kr/main/
+  - 검색어 설정하면 해당 검색어 결과 사진 자동 다운
