@@ -11,7 +11,7 @@ def crawling():
     code_path = os.path.dirname(__file__).replace('\\', '/')
 
     # 수집한 파일 저장할 폴더 생성
-    crawled_folder_path = code_path + '/crawled_data/live_flo'
+    crawled_folder_path = code_path + '/crawled_data/live_flo/'
     os.makedirs(crawled_folder_path, exist_ok=True)
 
     # 현재 크롬 버전 확인
@@ -91,22 +91,11 @@ def crawling():
     # make excel
     today_date = datetime.today().strftime("%Y%m%d_%H%M%S")
     file_name = f'live_flo_{today_date}.xlsx'
-    path = crawled_folder_path + '/'
-    df.to_excel(path + file_name, index=False, encoding='utf-8')
+    df.to_excel(crawled_folder_path + file_name, index=False, encoding='utf-8')
 
     print(f"{file_name} 파일 생성 완료")
 
     msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # 일정 시간마다 반복
-job = schedule.every().day.at("11:00").do( crawling )
-
-count = 0
-
-# 7번만 반복하도록 설정
-while True:
-    schedule.run_pending()
-    time.sleep(60)
-
-    if count > 7:
-        schedule.cancel_job(job)
+job = schedule.every().day.at("11:30").do( crawling )
