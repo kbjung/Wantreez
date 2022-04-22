@@ -13,7 +13,7 @@ def flo_crawling():
     code_path = os.path.dirname(__file__).replace('\\', '/')
 
     # 수집한 파일 저장할 폴더 생성
-    crawled_folder_path = code_path + '/crawled_data/live_flo'
+    crawled_folder_path = code_path + '/crawled_data/live_flo/'
     os.makedirs(crawled_folder_path, exist_ok=True)
 
     # 현재 크롬 버전 확인
@@ -93,8 +93,7 @@ def flo_crawling():
     # make excel
     today_date = datetime.today().strftime("%Y%m%d_%H%M%S")
     file_name = f'live_flo_{today_date}.xlsx'
-    path = crawled_folder_path + '/'
-    df.to_excel(path + file_name, index=False, encoding='utf-8')
+    df.to_excel(crawled_folder_path + file_name, index=False, encoding='utf-8')
 
     print(f"{file_name} 파일 생성 완료")
 
@@ -106,7 +105,7 @@ def genie_crawling():
     code_path = os.path.dirname(__file__).replace('\\', '/')
 
     # 수집한 파일 저장할 폴더 생성
-    crawled_folder_path = code_path + '/crawled_data/live_genie'
+    crawled_folder_path = code_path + '/crawled_data/live_genie/'
     os.makedirs(crawled_folder_path, exist_ok=True)
 
     # make link
@@ -172,8 +171,7 @@ def genie_crawling():
     # excel 파일로 출력
     today_date = str(datetime.today().strftime("%Y%m%d_%H%M%S"))
     file_name = f'live_genie_{today_date}.xlsx'
-    path = crawled_folder_path + '/'
-    df.to_excel(path + file_name, index=False, encoding='utf-8')
+    df.to_excel(crawled_folder_path + file_name, index=False, encoding='utf-8')
 
     print(f"{file_name} 파일 생성 완료")
 
@@ -185,7 +183,7 @@ def melon_crawling():
     code_path = os.path.dirname(__file__).replace('\\', '/')
 
     # 수집한 파일 저장할 폴더 생성
-    crawled_folder_path = code_path + '/crawled_data/live_melon'
+    crawled_folder_path = code_path + '/crawled_data/live_melon/'
     os.makedirs(crawled_folder_path, exist_ok=True)
 
     # 페이지 접속
@@ -240,8 +238,7 @@ def melon_crawling():
     # make file
     today_date = datetime.today().strftime("%Y%m%d_%H%M%S")
     file_name = f'live_melon_{today_date}.xlsx'
-    path = crawled_folder_path + '/'
-    df.to_excel(path + file_name, index=False, encoding='utf-8')
+    df.to_excel(crawled_folder_path + file_name, index=False, encoding='utf-8')
 
     print(f"{file_name} 파일 생성 완료")
     
@@ -253,7 +250,7 @@ def vibe_crawling():
     code_path = os.path.dirname(__file__).replace('\\', '/')
 
     # 수집한 파일 저장할 폴더 생성
-    crawled_folder_path = code_path + '/crawled_data/live_vibe'
+    crawled_folder_path = code_path + '/crawled_data/live_vibe/'
     os.makedirs(crawled_folder_path, exist_ok=True)
 
     # 현재 크롬 버전 확인
@@ -320,18 +317,163 @@ def vibe_crawling():
     # make excel
     today_date = datetime.today().strftime("%Y%m%d_%H%M%S")
     file_name = f'live_vibe_{today_date}.xlsx'
-    path = crawled_folder_path + '/'
-    df.to_excel(path + file_name, index=False)
+    df.to_excel(crawled_folder_path + file_name, index=False)
 
     print(f"{file_name} 파일 생성 완료")
 
     msg = ctypes.windll.user32.MessageBoxW(None, f'Vibe 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+
+# Bugs
+def bugs_crawling():
+    # 현재 경로 확인
+    code_path = os.path.dirname(__file__).replace('\\', '/')
+
+    # 수집한 파일 저장할 폴더 생성
+    crawled_folder_path = code_path + '/crawled_data/live_bugs/'
+    os.makedirs(crawled_folder_path, exist_ok=True)
+
+    # 페이지 접속
+    url = 'https://music.bugs.co.kr/chart'
+    headers = {'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'}
+    data = requests.get(url, headers=headers)
+    soup = bs(data.text, 'lxml')
+
+    # tr_soup
+    tr_soup = soup.find('tbody').find_all('tr')
+
+    # 현재 날짜
+    repeat_rank_date_list = []
+    today_date = datetime.today().strftime('%Y-%m-%d')
+    for i in range(100):
+        repeat_rank_date_list.append(today_date)
+
+    # rank
+    rank_list = []
+    for i in range(1, 101):
+        rank_list.append(i)
+
+    # song_title
+    song_title_list = []
+    for one in tr_soup:
+        song_title = one.find('p', 'title').text.strip()
+        song_title_list.append(song_title)
+
+    # artist
+    artist_list = []
+    for one in tr_soup:
+        artist = one.find('p', 'artist').text.strip()
+        artist_list.append(artist)
+
+    # album
+    album_list = []
+    for one in tr_soup:
+        album = one.find('a', 'album').text
+        album_list.append(album)
+
+    # df
+    dict = {'날짜':repeat_rank_date_list, '순위':rank_list, '곡':song_title_list, '가수':artist_list, '앨범':album_list}
+    df = pd.DataFrame(dict)
+
+    # 파일 생성
+    date = str(datetime.today().strftime("%Y%m%d_%H%M%S"))
+    file_name = 'live_bugs_' + date + '.xlsx'
+    df.to_excel(crawled_folder_path + file_name, index=False, encoding='utf-8')
+
+    print(f"{file_name} 파일 생성 완료")
+
+    msg = ctypes.windll.user32.MessageBoxW(None, f'Bugs 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+
+# Soribada
+def soribada_crawling():
+    # 현재 경로 확인
+    code_path = os.getcwd().replace('\\', '/')
+
+    # 파일 저장할 폴더 생성
+    crawled_folder_path = code_path + '/crawled_data/live_soribada/'
+    os.makedirs(crawled_folder_path, exist_ok=True)
+
+    # 현재 크롬 버전 확인
+    chrome_ver = ca.get_chrome_version().split('.')[0]
+
+    # 크롬 드라이버 확인 및 설치
+    try:
+        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
+    except:
+        ca.install(True)
+        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
+
+    # 페이지 접속
+    url = 'https://www.soribada.com/music/chart'
+    driver.get(url)
+    driver.implicitly_wait(3)
+    driver.maximize_window()
+
+    # 수프 담기
+    soup = bs(driver.page_source, 'lxml')
+
+    # 리스트
+    li_soup = soup.find_all('li', 'listen')
+    len(li_soup)
+
+    # 날짜
+    rank_date = soup.find('span', 'nowText').text
+    rank_date = rank_date.replace('년 ', '-')
+    rank_date = rank_date.replace('월 ', '-')
+    rank_date = rank_date.replace('일 ', '_')
+    rank_date = rank_date.replace('시 ', ':')
+    rank_date = rank_date.replace('분', '')
+
+    repeat_rank_date_list = []
+    for i in range(100):
+        repeat_rank_date_list.append(rank_date)
+
+    # rank
+    rank_list = []
+    for i in range(1, 101):
+        rank_list.append(i)
+
+    song_title_list = []
+    for one in li_soup:
+        song_title = one.find('span', 'song-title').text
+        song_title_list.append(song_title)
+
+    # artist
+    artist_list = []
+    for one in li_soup:
+        try:
+            artist = one.find('span', 'link-type2-name artist').find('a').text.strip()
+        except:
+            artist = one.find('span', 'link-type2-name artist detail_artist').text.strip()
+        artist_list.append(artist)
+
+
+    # album
+    album_list = []
+    for one in li_soup:
+        album = one.find('span', 'link-type2 album-title').text
+        album_list.append(album)
+
+    # df
+    dict = {'날짜':repeat_rank_date_list, '순위':rank_list, '곡':song_title_list, '가수':artist_list, '앨범':album_list}
+    df = pd.DataFrame(dict)
+
+    # make excel
+    today_date = datetime.today().strftime("%Y%m%d_%H%M%S")
+    date = rank_date.split('_')[0].replace('-', '')
+    file_name = f'live_soribada_{date}_{today_date}.xlsx'
+    df.to_excel(crawled_folder_path + file_name, index=False)
+
+    print(f"{file_name} 파일 생성 완료")
+
+    msg = ctypes.windll.user32.MessageBoxW(None, f'Soribada 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # 일정 시간마다 반복
 job1 = schedule.every().day.at("11:00").do( flo_crawling )
 job2 = schedule.every().day.at("11:02").do( genie_crawling )
 job3 = schedule.every().day.at("11:04").do( melon_crawling )
 job4 = schedule.every().day.at("11:06").do( vibe_crawling )
+job5 = schedule.every().day.at("11:08").do( bugs_crawling )
+job6 = schedule.every().day.at("11:10").do( soribada_crawling )
 
 count = 0
 
@@ -345,3 +487,5 @@ while True:
         schedule.cancel_job(job2)
         schedule.cancel_job(job3)
         schedule.cancel_job(job4)
+        schedule.cancel_job(job5)
+        schedule.cancel_job(job6)
