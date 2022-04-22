@@ -26,4 +26,4 @@
   - 실시간 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_soribada.ipynb)
   - 실시간 자동 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_soribada.py)
 + 6개 음원 사이트
-  - 실시간 (매일 1번 자동 실행) [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
+  - 실시간 자동(매일 1번 자동 실행) [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
