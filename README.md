@@ -8,7 +8,7 @@
 + Facebook [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/facebook_crawling.ipynb)
 + Instagram [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/insta_crawling.ipynb)
 + Weibo [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/weibo_crawling.ipynb)
-+ 경기관광포털 검색어 설정 사진 다운 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/crawling_pic(ggtour).ipynb)
++ 경기관광포털 사진 다운 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/crawling_pic(ggtour).ipynb)
 + 국가문화유산 사진 다운 [code](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/crawling_pic(heritage).ipynb)
 
 #### 💾 2022년 음원 사이트 Top100 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
