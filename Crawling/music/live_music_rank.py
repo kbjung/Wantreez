@@ -20,10 +20,10 @@ def flo_crawling():
     chrome_ver = ca.get_chrome_version().split('.')[0]
     # 크롬 드라이버 확인 및 설치
     try:
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' +'chromedriver.exe')
+        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
     except:
         ca.install(True)
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' +'chromedriver.exe')
+        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
 
     # 페이지 접속
     url = 'https://www.music-flo.com/browse'
@@ -257,10 +257,10 @@ def vibe_crawling():
     chrome_ver = ca.get_chrome_version().split('.')[0]
     # 크롬 드라이버 확인 및 설치
     try:
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' +'chromedriver.exe')
+        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
     except:
         ca.install(True)
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' +'chromedriver.exe')
+        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
 
     # 페이지 접속
     url = 'https://vibe.naver.com/chart/total'
