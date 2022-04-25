@@ -18,6 +18,11 @@ def flo_crawling():
 
     # 현재 크롬 버전 확인
     chrome_ver = ca.get_chrome_version().split('.')[0]
+
+    # headless 설정(크롬 창을 띄우지 않음)
+    webdriver_options = webdriver.ChromeOptions()
+    webdriver_options.add_argument('headless')
+
     # 크롬 드라이버 확인 및 설치
     try:
         driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
@@ -97,7 +102,7 @@ def flo_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Genie
 def genie_crawling():
@@ -175,7 +180,7 @@ def genie_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Genie 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Genie 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Melon
 def melon_crawling():
@@ -242,7 +247,7 @@ def melon_crawling():
 
     print(f"{file_name} 파일 생성 완료")
     
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Melon 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Melon 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Vibe
 def vibe_crawling():
@@ -255,6 +260,11 @@ def vibe_crawling():
 
     # 현재 크롬 버전 확인
     chrome_ver = ca.get_chrome_version().split('.')[0]
+
+    # headless 설정(크롬 창을 띄우지 않음)
+    webdriver_options = webdriver.ChromeOptions()
+    webdriver_options.add_argument('headless')
+
     # 크롬 드라이버 확인 및 설치
     try:
         driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
@@ -321,7 +331,7 @@ def vibe_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Vibe 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Vibe 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Bugs
 def bugs_crawling():
@@ -381,7 +391,7 @@ def bugs_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Bugs 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Bugs 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Soribada
 def soribada_crawling():
@@ -394,6 +404,10 @@ def soribada_crawling():
 
     # 현재 크롬 버전 확인
     chrome_ver = ca.get_chrome_version().split('.')[0]
+
+    # headless 설정(크롬 창을 띄우지 않음)
+    webdriver_options = webdriver.ChromeOptions()
+    webdriver_options.add_argument('headless')
 
     # 크롬 드라이버 확인 및 설치
     try:
@@ -465,7 +479,7 @@ def soribada_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Soribada 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Soribada 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # 일정 시간마다 반복
 job1 = schedule.every().day.at("11:00").do( flo_crawling )
