@@ -66,7 +66,7 @@ def flo_crawling():
 
     title_list = []
     for one in song_titles:
-        temp = one.text
+        temp = one.text.strip()
         title_list.append(temp)
 
     # artist
@@ -75,7 +75,7 @@ def flo_crawling():
     artist_list = []
     for one in artists:
         # temp = eval(one.attrs['data-rake'])['artistId'] # eval : str -> dict 변환 함수
-        temp = one.text
+        temp = one.text.strip()
         artist_list.append(temp)
 
     # album
@@ -83,7 +83,7 @@ def flo_crawling():
 
     album_list = []
     for one in albums:
-        temp = one.text
+        temp = one.text.strip()
         album_list.append(temp)
 
     # rank
