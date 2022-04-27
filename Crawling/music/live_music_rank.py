@@ -365,19 +365,19 @@ def bugs_crawling():
     # song_title
     song_title_list = []
     for one in tr_soup:
-        song_title = one.find('p', 'title').text.strip()
+        song_title = one.find('p', 'title').find('a')['title'].strip()
         song_title_list.append(song_title)
 
     # artist
     artist_list = []
     for one in tr_soup:
-        artist = one.find('p', 'artist').text.strip()
+        artist = one.find('p', 'artist').find('a')['title'].strip()
         artist_list.append(artist)
 
     # album
     album_list = []
     for one in tr_soup:
-        album = one.find('a', 'album').text
+        album = one.find('a', 'album')['title'].strip()
         album_list.append(album)
 
     # df
