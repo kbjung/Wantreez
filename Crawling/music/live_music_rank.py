@@ -19,10 +19,6 @@ def flo_crawling():
     # 현재 크롬 버전 확인
     chrome_ver = ca.get_chrome_version().split('.')[0]
 
-    # headless 설정(크롬 창을 띄우지 않음)
-    webdriver_options = webdriver.ChromeOptions()
-    webdriver_options.add_argument('headless')
-
     # 크롬 드라이버 확인 및 설치
     try:
         driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
@@ -262,15 +258,15 @@ def vibe_crawling():
     chrome_ver = ca.get_chrome_version().split('.')[0]
 
     # headless 설정(크롬 창을 띄우지 않음)
-    webdriver_options = webdriver.ChromeOptions()
-    webdriver_options.add_argument('headless')
+    options = webdriver.ChromeOptions()
+    options.add_argument('headless')
 
     # 크롬 드라이버 확인 및 설치
     try:
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
+        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe', options=options)
     except:
         ca.install(True)
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
+        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe', options=options)
 
     # 페이지 접속
     url = 'https://vibe.naver.com/chart/total'
@@ -491,15 +487,14 @@ job6 = schedule.every().day.at("11:10").do( soribada_crawling )
 
 count = 0
 
-# 7번만 반복하도록 설정
 while True:
     schedule.run_pending()
-    time.sleep(60)
 
-    if count > 7:
-        schedule.cancel_job(job1)
-        schedule.cancel_job(job2)
-        schedule.cancel_job(job3)
-        schedule.cancel_job(job4)
-        schedule.cancel_job(job5)
-        schedule.cancel_job(job6)
+    # 7번만 반복하도록 설정
+    # if count > 7:
+    #     schedule.cancel_job(job1)
+    #     schedule.cancel_job(job2)
+    #     schedule.cancel_job(job3)
+    #     schedule.cancel_job(job4)
+    #     schedule.cancel_job(job5)
+    #     schedule.cancel_job(job6)
