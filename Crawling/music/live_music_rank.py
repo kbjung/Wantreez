@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import requests
 from datetime import datetime
-import time, os, schedule, ctypes, random
+import time, os, schedule, random
 
 # Flo
 def flo_crawling():
@@ -16,15 +16,19 @@ def flo_crawling():
     crawled_folder_path = code_path + '/crawled_data/live_flo/'
     os.makedirs(crawled_folder_path, exist_ok=True)
 
+    # USB error 메세지 발생 해결을 위한 코드
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option("excludeSwitches", ["enable-logging"])
+
     # 현재 크롬 버전 확인
     chrome_ver = ca.get_chrome_version().split('.')[0]
 
     # 크롬 드라이버 확인 및 설치
     try:
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
+        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe', options=options)
     except:
         ca.install(True)
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
+        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe', options=options)
 
     # 페이지 접속
     url = 'https://www.music-flo.com/browse'
@@ -260,6 +264,8 @@ def vibe_crawling():
     # headless 설정(크롬 창을 띄우지 않음)
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
+    # USB error 메세지 발생 해결을 위한 코드
+    options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
     # 크롬 드라이버 확인 및 설치
     try:
