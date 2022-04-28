@@ -5,7 +5,10 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import requests
 from datetime import datetime
-import time, os, schedule, random
+import time, os, schedule, random, ctypes
+
+# 실행 메세지
+msg = ctypes.windll.user32.MessageBoxW(None, '파일 실행.', '알림', 0)
 
 # Flo
 def flo_crawling():
@@ -20,15 +23,9 @@ def flo_crawling():
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
-    # 현재 크롬 버전 확인
-    chrome_ver = ca.get_chrome_version().split('.')[0]
-
     # 크롬 드라이버 확인 및 설치
-    try:
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe', options=options)
-    except:
-        ca.install(True)
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe', options=options)
+    ca.install(True)
+    driver = webdriver.Chrome(options=options)
 
     # 페이지 접속
     url = 'https://www.music-flo.com/browse'
@@ -102,7 +99,7 @@ def flo_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    # msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Genie
 def genie_crawling():
@@ -180,7 +177,7 @@ def genie_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    # msg = ctypes.windll.user32.MessageBoxW(None, f'Genie 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    msg = ctypes.windll.user32.MessageBoxW(None, f'Genie 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Melon
 def melon_crawling():
@@ -247,7 +244,7 @@ def melon_crawling():
 
     print(f"{file_name} 파일 생성 완료")
     
-    # msg = ctypes.windll.user32.MessageBoxW(None, f'Melon 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    msg = ctypes.windll.user32.MessageBoxW(None, f'Melon 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Vibe
 def vibe_crawling():
@@ -268,11 +265,8 @@ def vibe_crawling():
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
     # 크롬 드라이버 확인 및 설치
-    try:
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe', options=options)
-    except:
-        ca.install(True)
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe', options=options)
+    ca.install(True)
+    driver = webdriver.Chrome(options=options)
 
     # 페이지 접속
     url = 'https://vibe.naver.com/chart/total'
@@ -333,7 +327,7 @@ def vibe_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    # msg = ctypes.windll.user32.MessageBoxW(None, f'Vibe 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    msg = ctypes.windll.user32.MessageBoxW(None, f'Vibe 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Bugs
 def bugs_crawling():
@@ -393,7 +387,7 @@ def bugs_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    # msg = ctypes.windll.user32.MessageBoxW(None, f'Bugs 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    msg = ctypes.windll.user32.MessageBoxW(None, f'Bugs 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Soribada
 def soribada_crawling():
@@ -408,15 +402,14 @@ def soribada_crawling():
     chrome_ver = ca.get_chrome_version().split('.')[0]
 
     # headless 설정(크롬 창을 띄우지 않음)
-    webdriver_options = webdriver.ChromeOptions()
-    webdriver_options.add_argument('headless')
+    options = webdriver.ChromeOptions()
+    options.add_argument('headless')
+    # USB error 메세지 발생 해결을 위한 코드
+    options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
     # 크롬 드라이버 확인 및 설치
-    try:
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
-    except:
-        ca.install(True)
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe')
+    ca.install(True)
+    driver = webdriver.Chrome(options=options)
 
     # 페이지 접속
     url = 'https://www.soribada.com/music/chart'
@@ -481,7 +474,7 @@ def soribada_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    # msg = ctypes.windll.user32.MessageBoxW(None, f'Soribada 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    msg = ctypes.windll.user32.MessageBoxW(None, f'Soribada 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # 일정 시간마다 반복
 job1 = schedule.every().day.at("11:00").do( flo_crawling )
@@ -491,7 +484,7 @@ job4 = schedule.every().day.at("11:06").do( vibe_crawling )
 job5 = schedule.every().day.at("11:08").do( bugs_crawling )
 job6 = schedule.every().day.at("11:10").do( soribada_crawling )
 
-count = 0
+# # count = 0
 
 while True:
     schedule.run_pending()
@@ -504,3 +497,14 @@ while True:
     #     schedule.cancel_job(job4)
     #     schedule.cancel_job(job5)
     #     schedule.cancel_job(job6)
+
+# # 테스트
+# flo_crawling() #1 
+# genie_crawling() #2
+# melon_crawling() #3
+# vibe_crawling() #4
+# bugs_crawling() #5
+# soribada_crawling() #6
+
+# # 종료 메세지
+# msg = ctypes.windll.user32.MessageBoxW(None, '파일 실행 완료.', '알림', 0)
