@@ -4,9 +4,9 @@ import pandas as pd
 from datetime import datetime
 from selenium.webdriver.common.keys import Keys
 import chromedriver_autoinstaller as ca
-import time, os, schedule, time, ctypes
+import time, os, schedule, ctypes
 
-def crawling():
+def flo_crawling():
     # 현재 경로 확인
     code_path = os.path.dirname(__file__).replace('\\', '/')
 
@@ -14,14 +14,19 @@ def crawling():
     crawled_folder_path = code_path + '/crawled_data/live_flo/'
     os.makedirs(crawled_folder_path, exist_ok=True)
 
+    # USB error 메세지 발생 해결을 위한 코드
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option("excludeSwitches", ["enable-logging"])
+
     # 현재 크롬 버전 확인
     chrome_ver = ca.get_chrome_version().split('.')[0]
+
     # 크롬 드라이버 확인 및 설치
     try:
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' +'chromedriver.exe')
+        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe', options=options)
     except:
         ca.install(True)
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' +'chromedriver.exe')
+        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe', options=options)
 
     # 페이지 접속
     url = 'https://www.music-flo.com/browse'
@@ -59,7 +64,7 @@ def crawling():
 
     title_list = []
     for one in song_titles:
-        temp = one.text
+        temp = one.text.strip()
         title_list.append(temp)
 
     # artist
@@ -68,7 +73,7 @@ def crawling():
     artist_list = []
     for one in artists:
         # temp = eval(one.attrs['data-rake'])['artistId'] # eval : str -> dict 변환 함수
-        temp = one.text
+        temp = one.text.strip()
         artist_list.append(temp)
 
     # album
@@ -76,7 +81,7 @@ def crawling():
 
     album_list = []
     for one in albums:
-        temp = one.text
+        temp = one.text.strip()
         album_list.append(temp)
 
     # rank
@@ -95,7 +100,9 @@ def crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # 일정 시간마다 반복
-job = schedule.every().day.at("11:30").do( crawling )
+# job = schedule.every().day.at("11:30").do( flo_crawling )
+# schedule.run_pending()
+flo_crawling()
