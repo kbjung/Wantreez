@@ -30,3 +30,5 @@
   - 과거 월간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/month_soribada.ipynb)
 + 6개 음원 사이트
   - 실시간 자동(매일 1번 자동 실행) [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
++ 새로운 추가된 가수 확인
+  - 가수의 소속사 확인을 위해, 데이터에 없는 새로운 가수 출력 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/match_artist_ent.ipynb)
