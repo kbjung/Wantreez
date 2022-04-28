@@ -22,11 +22,8 @@ def flo_crawling():
     chrome_ver = ca.get_chrome_version().split('.')[0]
 
     # 크롬 드라이버 확인 및 설치
-    try:
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe', options=options)
-    except:
-        ca.install(True)
-        driver = webdriver.Chrome(code_path + f'/{chrome_ver}/' + 'chromedriver.exe', options=options)
+    ca.install(True)
+    driver = webdriver.Chrome(options=options)
 
     # 페이지 접속
     url = 'https://www.music-flo.com/browse'
@@ -100,7 +97,7 @@ def flo_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    # msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # 일정 시간마다 반복
 # job = schedule.every().day.at("11:30").do( flo_crawling )
