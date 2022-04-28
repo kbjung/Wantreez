@@ -17,6 +17,7 @@
 + Bugs [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_bugs.ipynb) / 자동수집 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_bugs.py)
 + Soribada [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_soribada.ipynb) / 자동수집 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_soribada.py)
 + 6개 음원 사이트 자동 수집 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
++ 새로운 추가된 가수 확인 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/match_artist_ent.ipynb)
 
 #### 💾 인천시 이벤트 댓글 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/incheon)
 + 📃 내용 정리 [[notion]](https://www.notion.so/af8ebd471778439eb7be4b770fda9f94)
