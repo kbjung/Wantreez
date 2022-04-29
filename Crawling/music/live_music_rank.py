@@ -2,7 +2,7 @@ import pandas as pd
 from bs4 import BeautifulSoup as bs
 import chromedriver_autoinstaller as ca
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from selenium.webdriver import ActionChains
 import requests
 from datetime import datetime
 import time, os, schedule, random, ctypes
@@ -19,7 +19,6 @@ def flo_crawling():
     crawled_folder_path = code_path + '/crawled_data/live_flo/'
     os.makedirs(crawled_folder_path, exist_ok=True)
 
-
     # USB error 메세지 발생 해결을 위한 코드
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
@@ -34,17 +33,19 @@ def flo_crawling():
     driver.implicitly_wait(3)
     driver.maximize_window()
 
-    # 페이지 스크롤 다운
-    # 더보기 버튼 화면상 보여야 클릭 동작 작동함. 화면상에서 페이지 다운으로 더보기 버튼이 보이게 함.
-    body = driver.find_element_by_css_selector('body')
-    body.send_keys(Keys.PAGE_DOWN)
-    driver.implicitly_wait(1)
-    time.sleep(2)
-
     # 더보기 버튼
+    ex = driver.find_element_by_xpath('//*[@id="browseGenre"]/div[2]/ul')
     more_view_button = driver.find_element_by_xpath('//*[@id="browseRank"]/div[2]/div/button')
-    more_view_button.click()
-    time.sleep(3)
+    ActionChains(driver).move_to_element(ex).perform()
+    try:
+        more_view_button.click()
+        time.sleep(3)
+    except:
+        ex2 = driver.find_element_by_xpath('//*[@id="browseGenre"]/div[1]')
+        more_view_button = driver.find_element_by_xpath('//*[@id="browseRank"]/div[2]/div/button')
+        ActionChains(driver).move_to_element(ex).perform()
+        more_view_button.click()
+        time.sleep(3)
 
     # 수프에 담기
     soup = bs(driver.page_source, 'lxml')
@@ -477,18 +478,18 @@ def soribada_crawling():
 
     # msg = ctypes.windll.user32.MessageBoxW(None, f'Soribada 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
-# 일정 시간마다 반복
-job1 = schedule.every().day.at("11:00").do( flo_crawling )
-job2 = schedule.every().day.at("11:02").do( genie_crawling )
-job3 = schedule.every().day.at("11:04").do( melon_crawling )
-job4 = schedule.every().day.at("11:06").do( vibe_crawling )
-job5 = schedule.every().day.at("11:08").do( bugs_crawling )
-job6 = schedule.every().day.at("11:10").do( soribada_crawling )
+# # 일정 시간마다 반복
+# job1 = schedule.every().day.at("11:00").do( flo_crawling )
+# job2 = schedule.every().day.at("11:02").do( genie_crawling )
+# job3 = schedule.every().day.at("11:04").do( melon_crawling )
+# job4 = schedule.every().day.at("11:06").do( vibe_crawling )
+# job5 = schedule.every().day.at("11:08").do( bugs_crawling )
+# job6 = schedule.every().day.at("11:10").do( soribada_crawling )
 
 # count = 0
 
-while True:
-    schedule.run_pending()
+# while True:
+#     schedule.run_pending()
 
     # # 7번만 반복하도록 설정
     # if count > 7:
@@ -499,13 +500,13 @@ while True:
     #     schedule.cancel_job(job5)
     #     schedule.cancel_job(job6)
 
-# # 테스트
-# flo_crawling() #1 
-# genie_crawling() #2
-# melon_crawling() #3
-# vibe_crawling() #4
-# bugs_crawling() #5
-# soribada_crawling() #6
+# 테스트
+flo_crawling() #1 
+genie_crawling() #2
+melon_crawling() #3
+vibe_crawling() #4
+bugs_crawling() #5
+soribada_crawling() #6
 
 # # 종료 메세지
 # msg = ctypes.windll.user32.MessageBoxW(None, '파일 실행 완료.', '알림', 0)
