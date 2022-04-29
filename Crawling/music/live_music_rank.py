@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup as bs
 import chromedriver_autoinstaller as ca
 from selenium import webdriver
 from selenium.webdriver import ActionChains
+from selenium.webdriver.common.keys import Keys
 import requests
 from datetime import datetime
 import time, os, schedule, random, ctypes
@@ -33,21 +34,26 @@ def flo_crawling():
     driver.implicitly_wait(3)
     driver.maximize_window()
 
-    # 더보기 버튼
-    close_button = driver.find_element_by_xpath('//*[@id="app"]/div[4]/div[2]/button')
-    close_button.click()
-    
-    more_view_button = driver.find_element_by_xpath('//*[@id="browseRank"]/div[2]/div/button')
-    ActionChains(driver).move_to_element(more_view_button).perform()
+     # 닫기 버튼 클릭
     try:
-        more_view_button.click()
-        time.sleep(3)
+        close_button = driver.find_element_by_xpath('//*[@id="app"]/div[4]/div[2]/button')
+        close_button.click()
     except:
-        ex = driver.find_element_by_xpath('//*[@id="browseGenre"]/div[2]/ul')
+        pass
+
+    # 더보기 버튼
+    try:
         more_view_button = driver.find_element_by_xpath('//*[@id="browseRank"]/div[2]/div/button')
-        ActionChains(driver).move_to_element(ex).perform()
+        more_view_button.send_keys(Keys.ENTER)
+        time.sleep(1)
+    except:
+        more_view_button = driver.find_element_by_xpath('//*[@id="browseRank"]/div[2]/div/button')
+        ActionChains(driver).move_to_element(more_view_button).perform()
+        for d in range(4):
+            driver.find_element_by_tag_name('body').send_keys(Keys.ARROW_DOWN)
+            time.sleep(1)
         more_view_button.click()
-        time.sleep(3)
+        time.sleep(1)
 
     # 수프에 담기
     soup = bs(driver.page_source, 'lxml')
