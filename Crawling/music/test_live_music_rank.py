@@ -2,7 +2,7 @@ import pandas as pd
 from bs4 import BeautifulSoup as bs
 import chromedriver_autoinstaller as ca
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from selenium.webdriver import ActionChains
 import requests
 from datetime import datetime
 import time, os, schedule, random, ctypes
@@ -34,17 +34,21 @@ def flo_crawling():
     driver.implicitly_wait(3)
     driver.maximize_window()
 
-    # 페이지 스크롤 다운
-    # 더보기 버튼 화면상 보여야 클릭 동작 작동함. 화면상에서 페이지 다운으로 더보기 버튼이 보이게 함.
-    body = driver.find_element_by_css_selector('body')
-    body.send_keys(Keys.PAGE_DOWN)
-    driver.implicitly_wait(1)
-    time.sleep(2)
-
     # 더보기 버튼
+    close_button = driver.find_element_by_xpath('//*[@id="app"]/div[4]/div[2]/button')
+    close_button.click()
+    
     more_view_button = driver.find_element_by_xpath('//*[@id="browseRank"]/div[2]/div/button')
-    more_view_button.click()
-    time.sleep(3)
+    ActionChains(driver).move_to_element(more_view_button).perform()
+    try:
+        more_view_button.click()
+        time.sleep(3)
+    except:
+        ex = driver.find_element_by_xpath('//*[@id="browseGenre"]/div[2]/ul')
+        more_view_button = driver.find_element_by_xpath('//*[@id="browseRank"]/div[2]/div/button')
+        ActionChains(driver).move_to_element(ex).perform()
+        more_view_button.click()
+        time.sleep(3)
 
     # 수프에 담기
     soup = bs(driver.page_source, 'lxml')
