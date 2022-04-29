@@ -34,14 +34,16 @@ def flo_crawling():
     driver.maximize_window()
 
     # 더보기 버튼
-    ex = driver.find_element_by_xpath('//*[@id="browseGenre"]/div[2]/ul')
+    close_button = driver.find_element_by_xpath('//*[@id="app"]/div[4]/div[2]/button')
+    close_button.click()
+    
     more_view_button = driver.find_element_by_xpath('//*[@id="browseRank"]/div[2]/div/button')
-    ActionChains(driver).move_to_element(ex).perform()
+    ActionChains(driver).move_to_element(more_view_button).perform()
     try:
         more_view_button.click()
         time.sleep(3)
     except:
-        ex2 = driver.find_element_by_xpath('//*[@id="browseGenre"]/div[1]')
+        ex = driver.find_element_by_xpath('//*[@id="browseGenre"]/div[2]/ul')
         more_view_button = driver.find_element_by_xpath('//*[@id="browseRank"]/div[2]/div/button')
         ActionChains(driver).move_to_element(ex).perform()
         more_view_button.click()
