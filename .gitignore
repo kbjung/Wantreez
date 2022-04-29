@@ -32,3 +32,5 @@ Crawling/music/build/test_live_music_rank/EXE-00.toc
 Crawling/music/build/test_live_music_rank/base_library.zip
 Crawling/music/build/test_live_music_rank/Analysis-00.toc
 Crawling/music/test_live_music_rank.spec
+Crawling/music/dist/live_music_rank.exe
+Crawling/music/dist/test_live_music_rank.exe
