@@ -8,16 +8,17 @@ from datetime import datetime
 import time, os, schedule, random, ctypes
 
 # 실행 메세지
-msg = ctypes.windll.user32.MessageBoxW(None, '파일 실행.', '알림', 0)
+# msg = ctypes.windll.user32.MessageBoxW(None, '파일 실행.', '알림', 0)
 
 # Flo
 def flo_crawling():
     # 현재 경로 확인
-    code_path = os.path.dirname(__file__).replace('\\', '/')
+    code_path = os.getcwd().replace('\\', '/')
 
     # 수집한 파일 저장할 폴더 생성
     crawled_folder_path = code_path + '/crawled_data/live_flo/'
     os.makedirs(crawled_folder_path, exist_ok=True)
+
 
     # USB error 메세지 발생 해결을 위한 코드
     options = webdriver.ChromeOptions()
@@ -99,13 +100,13 @@ def flo_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Genie
 def genie_crawling():
     # 현재 경로 확인
-    code_path = os.path.dirname(__file__).replace('\\', '/')
-
+    code_path = os.getcwd().replace('\\', '/')
+    
     # 수집한 파일 저장할 폴더 생성
     crawled_folder_path = code_path + '/crawled_data/live_genie/'
     os.makedirs(crawled_folder_path, exist_ok=True)
@@ -177,12 +178,12 @@ def genie_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Genie 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Genie 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Melon
 def melon_crawling():
     # 파일 경로 확인
-    code_path = os.path.dirname(__file__).replace('\\', '/')
+    code_path = os.getcwd().replace('\\', '/')
 
     # 수집한 파일 저장할 폴더 생성
     crawled_folder_path = code_path + '/crawled_data/live_melon/'
@@ -244,12 +245,12 @@ def melon_crawling():
 
     print(f"{file_name} 파일 생성 완료")
     
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Melon 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Melon 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Vibe
 def vibe_crawling():
     # 현재 경로 확인
-    code_path = os.path.dirname(__file__).replace('\\', '/')
+    code_path = os.getcwd().replace('\\', '/')
 
     # 수집한 파일 저장할 폴더 생성
     crawled_folder_path = code_path + '/crawled_data/live_vibe/'
@@ -327,12 +328,12 @@ def vibe_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Vibe 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Vibe 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Bugs
 def bugs_crawling():
     # 현재 경로 확인
-    code_path = os.path.dirname(__file__).replace('\\', '/')
+    code_path = os.getcwd().replace('\\', '/')
 
     # 수집한 파일 저장할 폴더 생성
     crawled_folder_path = code_path + '/crawled_data/live_bugs/'
@@ -387,7 +388,7 @@ def bugs_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Bugs 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Bugs 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # Soribada
 def soribada_crawling():
@@ -474,7 +475,7 @@ def soribada_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Soribada 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Soribada 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # 일정 시간마다 반복
 job1 = schedule.every().day.at("11:00").do( flo_crawling )
@@ -484,12 +485,12 @@ job4 = schedule.every().day.at("11:06").do( vibe_crawling )
 job5 = schedule.every().day.at("11:08").do( bugs_crawling )
 job6 = schedule.every().day.at("11:10").do( soribada_crawling )
 
-# # count = 0
+# count = 0
 
 while True:
     schedule.run_pending()
 
-    # 7번만 반복하도록 설정
+    # # 7번만 반복하도록 설정
     # if count > 7:
     #     schedule.cancel_job(job1)
     #     schedule.cancel_job(job2)
