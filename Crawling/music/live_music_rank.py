@@ -478,18 +478,18 @@ def soribada_crawling():
 
     # msg = ctypes.windll.user32.MessageBoxW(None, f'Soribada 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
-# # 일정 시간마다 반복
-# job1 = schedule.every().day.at("11:00").do( flo_crawling )
-# job2 = schedule.every().day.at("11:02").do( genie_crawling )
-# job3 = schedule.every().day.at("11:04").do( melon_crawling )
-# job4 = schedule.every().day.at("11:06").do( vibe_crawling )
-# job5 = schedule.every().day.at("11:08").do( bugs_crawling )
-# job6 = schedule.every().day.at("11:10").do( soribada_crawling )
+# 일정 시간마다 반복
+job1 = schedule.every().day.at("11:00").do( flo_crawling )
+job2 = schedule.every().day.at("11:02").do( genie_crawling )
+job3 = schedule.every().day.at("11:04").do( melon_crawling )
+job4 = schedule.every().day.at("11:06").do( vibe_crawling )
+job5 = schedule.every().day.at("11:08").do( bugs_crawling )
+job6 = schedule.every().day.at("11:10").do( soribada_crawling )
 
 # count = 0
 
-# while True:
-#     schedule.run_pending()
+while True:
+    schedule.run_pending()
 
     # # 7번만 반복하도록 설정
     # if count > 7:
@@ -500,13 +500,13 @@ def soribada_crawling():
     #     schedule.cancel_job(job5)
     #     schedule.cancel_job(job6)
 
-# 테스트
-flo_crawling() #1 
-genie_crawling() #2
-melon_crawling() #3
-vibe_crawling() #4
-bugs_crawling() #5
-soribada_crawling() #6
+# # 테스트
+# flo_crawling() #1 
+# genie_crawling() #2
+# melon_crawling() #3
+# vibe_crawling() #4
+# bugs_crawling() #5
+# soribada_crawling() #6
 
 # # 종료 메세지
 # msg = ctypes.windll.user32.MessageBoxW(None, '파일 실행 완료.', '알림', 0)
