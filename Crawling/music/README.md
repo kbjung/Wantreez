@@ -34,4 +34,3 @@
   - 추가된 가수 확인 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/new_artist.ipynb)
   - 추가된 노래 제목 확인 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/new_title.ipynb)
   - 소속사, 소속사 분류 추가 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/add_agency.ipynb)
-  - 
