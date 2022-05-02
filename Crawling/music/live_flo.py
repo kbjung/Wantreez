@@ -95,6 +95,8 @@ def flo_crawling():
     file_name = f'live_flo_{today_date}.xlsx'
     df.to_excel(crawled_folder_path + file_name, index=False, encoding='utf-8')
 
+    df.to_excel(f'\\\\192.168.100.178/d/용역/2022/2022년 음원사재기 관련 모니터링 위탁용역/음원순위_크롤링/live_flo/{file_name}', index=False, encoding='utf-8')
+
     print(f"{file_name} 파일 생성 완료")
 
     msg = ctypes.windll.user32.MessageBoxW(None, f'Flo 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
