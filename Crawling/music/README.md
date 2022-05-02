@@ -30,7 +30,7 @@
   - 과거 일간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/day_soribada.ipynb)
   - 과거 주간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/week_soribada.ipynb)
   - 과거 월간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/month_soribada.ipynb)
-+ 새로운 추가된 가수 확인
-  - 가수의 소속사 확인을 위해, 데이터에 없는 새로운 가수 출력 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/match_artist_ent.ipynb)
-+ 소속사, 소속사 분류 추가
-  - 가수의 소속사와 소속사 분류 열 추가 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/add_agency.ipynb)
++ 데이터 전처리
+  - 추가된 가수 확인 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/new_artist.ipynb)
+  - 추가된 노래 제목 확인 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/new_title.ipynb)
+  - 소속사, 소속사 분류 추가 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/add_agency.ipynb)
