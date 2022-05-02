@@ -33,4 +33,4 @@
 + 새로운 추가된 가수 확인
   - 가수의 소속사 확인을 위해, 데이터에 없는 새로운 가수 출력 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/match_artist_ent.ipynb)
 + 소속사, 소속사 분류 추가
-  - 가수의 소속사와 소속사 분류 열 추가 [ipynb]()
+  - 가수의 소속사와 소속사 분류 열 추가 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/add_agency.ipynb)
