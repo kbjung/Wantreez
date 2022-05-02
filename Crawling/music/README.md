@@ -1,5 +1,7 @@
 #### 💾 2022년 음원 사이트 Top100 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
 + 📃 내용 정리 [[notion]](https://www.notion.so/2ca2f19dfdd54028b263e2f41760f602)
++ 6개 음원 사이트
+  - 실시간 자동(매일 1번 자동 실행) [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
 + Melon
   - 실시간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_melon.ipynb)
   - 실시간 자동 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_melon.py)
@@ -28,7 +30,7 @@
   - 과거 일간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/day_soribada.ipynb)
   - 과거 주간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/week_soribada.ipynb)
   - 과거 월간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/month_soribada.ipynb)
-+ 6개 음원 사이트
-  - 실시간 자동(매일 1번 자동 실행) [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
 + 새로운 추가된 가수 확인
   - 가수의 소속사 확인을 위해, 데이터에 없는 새로운 가수 출력 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/match_artist_ent.ipynb)
++ 소속사, 소속사 분류 추가
+  - 가수의 소속사와 소속사 분류 열 추가 [ipynb]()
