@@ -649,7 +649,7 @@ while True:
 # melon_crawling() #3
 # vibe_crawling() #4
 # bugs_crawling() #5
-# soribada_crawling() #6
+# soribada_crawling() #63/
 # ky_crawling() #7
 # tj_crawling() #8
 
