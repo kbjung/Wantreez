@@ -395,6 +395,7 @@ def bugs_crawling():
     song_title_list = []
     for one in tr_soup:
         song_title = one.find('p', 'title').find('a')['title'].strip()
+        song_title = song_title.replace('[19금]', '').strip()
         song_title_list.append(song_title)
 
     # artist

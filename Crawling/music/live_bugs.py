@@ -36,6 +36,7 @@ def bugs_crawling():
     song_title_list = []
     for one in tr_soup:
         song_title = one.find('p', 'title').text.strip()
+        song_title = song_title.replace('[19금]', '').strip()
         song_title_list.append(song_title)
 
     # artist
@@ -63,7 +64,9 @@ def bugs_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-    msg = ctypes.windll.user32.MessageBoxW(None, f'Bugs 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
+    # msg = ctypes.windll.user32.MessageBoxW(None, f'Bugs 순위 자료 스크래핑 완료.\n{file_name} 생성완료', '알림', 0)
 
 # 일정 시간마다 반복
-job = schedule.every().day.at("11:08").do( bugs_crawling )
+# job = schedule.every().day.at("11:08").do( bugs_crawling )
+
+bugs_crawling()
