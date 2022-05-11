@@ -597,7 +597,11 @@ def tj_crawling():
     os.makedirs(crawled_folder_path, exist_ok=True)
 
     # 페이지 접속
-    url = 'http://www.tjmedia.com/tjsong/song_monthPopular.asp'
+    crawled_date = datetime.today().strftime("%Y-%m-%d")
+    year = crawled_date.split('-')[0]
+    month = crawled_date.split('-')[1]
+    day = crawled_date.split('-')[2]
+    url = f'http://www.tjmedia.com/tjsong/song_monthPopular.asp?strType=1&SYY={year}&SMM={month}&SDD={day}&EYY={year}&EMM={month}&EDD={day}'
     headers = {'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'}
     data = requests.get(url, headers=headers)
     # 수프에 담기
