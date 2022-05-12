@@ -61,6 +61,9 @@ def flo_crawling():
     # webdriver quit
     driver.quit()
 
+    # 사이트 명
+    site_name_list = ['flo' for i in range(100)]
+
     # 순위 날짜
     rank_date = datetime.today().strftime('%Y-%m-%d')
 
@@ -99,7 +102,7 @@ def flo_crawling():
         rank_list.append(i)
 
     # make df
-    dict = {'날짜':repeat_rank_date_list, '순위':rank_list, '곡':title_list, '가수': artist_list, '앨범':album_list}
+    dict = {'사이트':site_name_list, '날짜':repeat_rank_date_list, '순위':rank_list, '곡':title_list, '가수': artist_list, '앨범':album_list}
     df = pd.DataFrame(dict)
 
     # make excel
@@ -132,6 +135,9 @@ def genie_crawling():
     second_link = f'https://www.genie.co.kr/chart/top200?ditc=D&ymd={today_date}&hh={today_hour}&rtm=Y&pg=2'
     link_list.append(first_link)
     link_list.append(second_link)
+
+    # 사이트 명
+    site_name_list = ['genie' for i in range(100)]
 
     # 순위 날짜
     today_rank_date = str(datetime.today().strftime("%Y-%m-%d"))
@@ -179,7 +185,7 @@ def genie_crawling():
         time.sleep( random.uniform(0.5, 0.9) )
 
     # 데이터 셋으로 만들기
-    dict = {'날짜':repeat_rank_date_list, '순위':rank_list, '곡':title_list, '가수':artist_list, '앨범':album_list}
+    dict = {'사이트':site_name_list, '날짜':repeat_rank_date_list, '순위':rank_list, '곡':title_list, '가수':artist_list, '앨범':album_list}
     df = pd.DataFrame(dict)
 
     # excel 파일로 출력
@@ -209,6 +215,9 @@ def melon_crawling():
     data = requests.get(url, headers=headers)
     # soup : html형식
     soup = bs(data.text, 'lxml')
+
+    # 사이트 명
+    site_name_list = ['melon' for i in range(100)]
 
     # 순위 날짜
     raw_date = soup.find('div', 'calendar_prid mt12')
@@ -248,7 +257,7 @@ def melon_crawling():
         album_list.append(temp)
 
     # make df
-    dict = {'날짜':repeat_rank_date_list, '순위':rank_list, '곡':title_list, '가수':artist_list, '앨범':album_list}
+    dict = {'사이트':site_name_list, '날짜':repeat_rank_date_list, '순위':rank_list, '곡':title_list, '가수':artist_list, '앨범':album_list}
     df = pd.DataFrame(dict)
 
     # make file
@@ -296,6 +305,9 @@ def vibe_crawling():
     # driver quit
     driver.quit()
 
+    # 사이트 명
+    site_name_list = ['vibe' for i in range(100)]
+
     # 순위 날짜
     rank_date = datetime.today().strftime('%Y-%m-%d')
 
@@ -333,7 +345,7 @@ def vibe_crawling():
         album_list.append(temp)
 
     # make df
-    dict = {'날짜':repeat_rank_date_list, '순위':rank_list, '곡':title_list, '가수':artist_list, '앨범':album_list}
+    dict = {'사이트':site_name_list, '날짜':repeat_rank_date_list, '순위':rank_list, '곡':title_list, '가수':artist_list, '앨범':album_list}
     df = pd.DataFrame(dict)
 
     # make excel
@@ -365,6 +377,9 @@ def bugs_crawling():
     # tr_soup
     tr_soup = soup.find('tbody').find_all('tr')
 
+    # 사이트 명
+    site_name_list = ['bugs' for i in range(100)]
+
     # 현재 날짜
     repeat_rank_date_list = []
     today_date = datetime.today().strftime('%Y-%m-%d')
@@ -380,6 +395,7 @@ def bugs_crawling():
     song_title_list = []
     for one in tr_soup:
         song_title = one.find('p', 'title').find('a')['title'].strip()
+        song_title = song_title.replace('[19금]', '').strip()
         song_title_list.append(song_title)
 
     # artist
@@ -395,7 +411,7 @@ def bugs_crawling():
         album_list.append(album)
 
     # df
-    dict = {'날짜':repeat_rank_date_list, '순위':rank_list, '곡':song_title_list, '가수':artist_list, '앨범':album_list}
+    dict = {'사이트':site_name_list, '날짜':repeat_rank_date_list, '순위':rank_list, '곡':song_title_list, '가수':artist_list, '앨범':album_list}
     df = pd.DataFrame(dict)
 
     # 파일 생성
@@ -444,6 +460,9 @@ def soribada_crawling():
     li_soup = soup.find_all('li', 'listen')
     len(li_soup)
 
+    # 사이트 명
+    site_name_list = ['soribada' for i in range(100)]
+
     # 날짜
     rank_date = soup.find('span', 'nowText').text
     rank_date = rank_date.replace('년 ', '-')
@@ -483,7 +502,7 @@ def soribada_crawling():
         album_list.append(album)
 
     # df
-    dict = {'날짜':repeat_rank_date_list, '순위':rank_list, '곡':song_title_list, '가수':artist_list, '앨범':album_list}
+    dict = {'사이트':site_name_list, '날짜':repeat_rank_date_list, '순위':rank_list, '곡':song_title_list, '가수':artist_list, '앨범':album_list}
     df = pd.DataFrame(dict)
 
     # make excel
@@ -514,6 +533,9 @@ def ky_crawling():
     # 수프에 담기
     soup = bs(data.text, 'lxml')
     ul_soup = soup.find_all('ul', 'popular_chart_list clear')[1:]
+
+    # 사이트 명
+    site_name_list = ['ky' for i in range(100)]
 
     # 순위 날짜
     rank_date = datetime.today().strftime('%Y-%m-%d')
@@ -554,7 +576,7 @@ def ky_crawling():
         artist_list.append(temp)
 
     # make df
-    dict = {'날짜':repeat_rank_date_list, '순위':rank_list, '곡':title_list, '가수': artist_list}
+    dict = {'사이트':site_name_list, '날짜':repeat_rank_date_list, '순위':rank_list, '곡':title_list, '가수': artist_list}
     df = pd.DataFrame(dict)
     # make excel
     today_date = datetime.today().strftime("%Y%m%d_%H%M%S")
@@ -575,13 +597,20 @@ def tj_crawling():
     os.makedirs(crawled_folder_path, exist_ok=True)
 
     # 페이지 접속
-    url = 'http://www.tjmedia.com/tjsong/song_monthPopular.asp'
+    crawled_date = datetime.today().strftime("%Y-%m-%d")
+    year = crawled_date.split('-')[0]
+    month = crawled_date.split('-')[1]
+    day = crawled_date.split('-')[2]
+    url = f'http://www.tjmedia.com/tjsong/song_monthPopular.asp?strType=1&SYY={year}&SMM={month}&SDD={day}&EYY={year}&EMM={month}&EDD={day}'
     headers = {'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'}
     data = requests.get(url, headers=headers)
     # 수프에 담기
     # 한글 깨짐 해결
     soup = bs(data.content.decode('utf-8', 'replace'), 'lxml')
     tr_soup = soup.find('div', id='BoardType1').find('tbody').find_all('tr')[1:]
+
+    # 사이트 명
+    site_name_list = ['tj' for i in range(100)]
 
     # 순위 날짜
     rank_date = datetime.today().strftime('%Y-%m-%d')
@@ -604,7 +633,7 @@ def tj_crawling():
         rank_list.append(i)
     
     # make df
-    dict = {'날짜':repeat_rank_date_list, '순위':rank_list, '곡':title_list, '가수': artist_list}
+    dict = {'사이트':site_name_list, '날짜':repeat_rank_date_list, '순위':rank_list, '곡':title_list, '가수': artist_list}
     df = pd.DataFrame(dict)
 
     # make excel
@@ -617,7 +646,7 @@ def tj_crawling():
 
     print(f"{file_name} 파일 생성 완료")
 
-# # 일정 시간마다 반복
+# 일정 시간마다 반복
 # job1 = schedule.every().day.at("11:00").do( flo_crawling )
 # job2 = schedule.every().day.at("11:02").do( genie_crawling )
 # job3 = schedule.every().day.at("11:04").do( melon_crawling )
@@ -643,13 +672,13 @@ def tj_crawling():
     #     schedule.cancel_job(job7)
     #     schedule.cancel_job(job8)
 
-# 테스트
+# # 테스트
 flo_crawling() #1 
 genie_crawling() #2
 melon_crawling() #3
 vibe_crawling() #4
 bugs_crawling() #5
-soribada_crawling() #6
+soribada_crawling() #63/
 ky_crawling() #7
 tj_crawling() #8
 
