@@ -32,5 +32,7 @@
   - 과거 월간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/month_soribada.ipynb)
 + 데이터 전처리
   - 추가된 가수 확인 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/new_artist.ipynb)
-  - 추가된 노래 제목 확인 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/new_title.ipynb)
+  - 추가된 노래 제목 확인, top10 진입 신규 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/new_title.ipynb)
   - 소속사, 소속사 분류 추가 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/add_agency.ipynb)
++ 시각화
+  - 음원 사재기 검색비율(네이버 데이터랩) [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/search_rate.ipynb)
