@@ -62,7 +62,7 @@ def flo_crawling():
     driver.quit()
 
     # 사이트 명
-    site_name_list = ['flo' for i in range(100)]
+    site_name_list = ['Flo' for i in range(100)]
 
     # 순위 날짜
     rank_date = datetime.today().strftime('%Y-%m-%d')
@@ -137,7 +137,7 @@ def genie_crawling():
     link_list.append(second_link)
 
     # 사이트 명
-    site_name_list = ['genie' for i in range(100)]
+    site_name_list = ['Genie' for i in range(100)]
 
     # 순위 날짜
     today_rank_date = str(datetime.today().strftime("%Y-%m-%d"))
@@ -217,7 +217,7 @@ def melon_crawling():
     soup = bs(data.text, 'lxml')
 
     # 사이트 명
-    site_name_list = ['melon' for i in range(100)]
+    site_name_list = ['Melon' for i in range(100)]
 
     # 순위 날짜
     raw_date = soup.find('div', 'calendar_prid mt12')
@@ -306,7 +306,7 @@ def vibe_crawling():
     driver.quit()
 
     # 사이트 명
-    site_name_list = ['vibe' for i in range(100)]
+    site_name_list = ['Vibe' for i in range(100)]
 
     # 순위 날짜
     rank_date = datetime.today().strftime('%Y-%m-%d')
@@ -378,7 +378,7 @@ def bugs_crawling():
     tr_soup = soup.find('tbody').find_all('tr')
 
     # 사이트 명
-    site_name_list = ['bugs' for i in range(100)]
+    site_name_list = ['Bugs' for i in range(100)]
 
     # 현재 날짜
     repeat_rank_date_list = []
@@ -461,7 +461,7 @@ def soribada_crawling():
     len(li_soup)
 
     # 사이트 명
-    site_name_list = ['soribada' for i in range(100)]
+    site_name_list = ['Soribada' for i in range(100)]
 
     # 날짜
     rank_date = soup.find('span', 'nowText').text
@@ -535,7 +535,7 @@ def ky_crawling():
     ul_soup = soup.find_all('ul', 'popular_chart_list clear')[1:]
 
     # 사이트 명
-    site_name_list = ['ky' for i in range(100)]
+    site_name_list = ['Ky' for i in range(100)]
 
     # 순위 날짜
     rank_date = datetime.today().strftime('%Y-%m-%d')
@@ -601,7 +601,8 @@ def tj_crawling():
     year = crawled_date.split('-')[0]
     month = crawled_date.split('-')[1]
     day = crawled_date.split('-')[2]
-    url = f'http://www.tjmedia.com/tjsong/song_monthPopular.asp?strType=1&SYY={year}&SMM={month}&SDD={day}&EYY={year}&EMM={month}&EDD={day}'
+    day2 = str(int(day)-1)
+    url = f'http://www.tjmedia.com/tjsong/song_monthPopular.asp?strType=1&SYY={year}&SMM={month}&SDD={day2}&EYY={year}&EMM={month}&EDD={day}'
     headers = {'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'}
     data = requests.get(url, headers=headers)
     # 수프에 담기
@@ -610,7 +611,7 @@ def tj_crawling():
     tr_soup = soup.find('div', id='BoardType1').find('tbody').find_all('tr')[1:]
 
     # 사이트 명
-    site_name_list = ['tj' for i in range(100)]
+    site_name_list = ['Tj' for i in range(100)]
 
     # 순위 날짜
     rank_date = datetime.today().strftime('%Y-%m-%d')
