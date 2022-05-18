@@ -1,7 +1,7 @@
-#### 💾 2022년 음원 사이트 Top100 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
+## 💾 2022년 음원 사이트 Top100 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
 + 📃 내용 정리 [[notion]](https://www.notion.so/2ca2f19dfdd54028b263e2f41760f602)
 
-##### 음원 데이터 수집
+### 음원 데이터 수집
 + 6개 음원 사이트
   - 실시간 자동(매일 1번 자동 실행) [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
 + Melon
@@ -33,7 +33,7 @@
   - 과거 주간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/week_soribada.ipynb)
   - 과거 월간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/month_soribada.ipynb)
 
-##### 리포트 작성 코드
+### 리포트 작성 코드
 + 데이터 전처리
   - 01\. 추가된 가수 확인 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/01.new_artist.ipynb)
   - 02\. 수집 데이터에 소속사 추가 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/02.add_agency.ipynb)
