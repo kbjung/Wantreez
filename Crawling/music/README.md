@@ -39,7 +39,7 @@
   - 02\. 수집 데이터에 소속사 추가 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/02.add_agency.ipynb)
   - 03\. 소속사 입력되지않은 음원 확인 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/03.check_agency.ipynb)
 + 분석 및 시각화
-  - 04\. 음원 순위 그래프, 급상승 음원, 기획사/소속사별 진입 음원 데이터 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/04.report.ipynb)
+  - 04\. 음원 순위 그래프, 급상승 음원, 기획사/소속사별 진입 음원 데이터 저장[ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/04.report.ipynb)
   - 05\. 50위 진입/이탈, 10위 음원 데이터 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/05.Top10%2C50_music.ipynb)
   - 06\. 신규 음원 데이터 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/06.new_title.ipynb)
   - 07\. 노래방 신규 음원 데이터 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/07.new_title_ky%2Ctj.ipynb)
@@ -47,3 +47,5 @@
   - 09-01\. 급상승음원 네이버 데이터 랩 데이터 저장 및 시각화 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/09-01.outlier_naver_search.ipynb)
   - 09-02\. 급상승음원 카카오 트랜드 데이터 저장 및 시각화 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/09-02.outlier_kakao_search.ipynb)
   - 09-03\. 급상승음원 구글 트랜드 데이터 저장 및 시각화 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/09-03.outlier_google_search.ipynb)
++ 2022년 1-3월
+  - 음원 순위 그래프, 급상승음원 데이터 저장 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/month1_3.ipynb)
