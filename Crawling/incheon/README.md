@@ -10,5 +10,5 @@
 + 인스타
   - 테스트 코드 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/test_naver_blog.ipynb)
   - 2022.02.25 이벤트 글 테스트 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/insta.ipynb)
-+ 엑셀 파일 너비 조정(에러 수정 중...⏳)
++ ~엑셀 파일 너비 조정~(에러 수정 중...⏳)
   - [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/manage_excel_file.ipynb)
