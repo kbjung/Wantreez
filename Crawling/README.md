@@ -18,4 +18,4 @@
 + 네이버 블로그 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/naver_blog.ipynb)
 + 페이스북 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/facebook.ipynb)
 + 인스타 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/insta.ipynb)
-+ ~엑셀 파일 너비 조정~ [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/manage_excel_file.ipynb)
++ ~엑셀 파일 너비 조정~
