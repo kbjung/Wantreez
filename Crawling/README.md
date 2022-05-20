@@ -10,7 +10,7 @@
 
 #### 💾 2022년 음원 사이트 Top100 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
 + 설명서 📃 [[notion]](https://www.notion.so/debe145a50054ac088fb83d767a2ccaa)
-+ 📃 내용 정리 [[notion]](https://www.notion.so/2ca2f19dfdd54028b263e2f41760f602)
++ 내용 정리 📃 [[notion]](https://www.notion.so/2ca2f19dfdd54028b263e2f41760f602)
 + 6개 음원 사이트 자동 수집 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
 + 데이터 전처리, 분석 및 시각화
 
