@@ -1,6 +1,6 @@
 ### 🐈 Crawling [[상세내용]](https://github.com/kbjung/Wantreez/tree/main/Crawling)
 #### 💾 2022년 경기도 해외 SNS 게시글 정보 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido)
-+ 📃 To do list [[notion]](https://www.notion.so/38f59d8d4f474ed4b3a52fad72885683)
++ 설명서 📃 [[notion]](https://www.notion.so/5f7b9484d2b14e54b0e4111e6a047ffd)
 + Blog [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/blog_crawling.ipynb)
 + Facebook [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/facebook_crawling.ipynb)
 + Instagram [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/insta_crawling.ipynb)
@@ -9,13 +9,15 @@
 + 국가문화유산 사진 다운 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/crawling_pic(heritage).ipynb)
 
 #### 💾 2022년 음원 사이트 Top100 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
-+ 📃 내용 정리 [[notion]](https://www.notion.so/2ca2f19dfdd54028b263e2f41760f602)
++ 설명서 📃 [[notion]](https://www.notion.so/debe145a50054ac088fb83d767a2ccaa)
++ 내용 정리 📃 [[notion]](https://www.notion.so/2ca2f19dfdd54028b263e2f41760f602)
 + 6개 음원 사이트 자동 수집 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
 + 데이터 전처리, 분석 및 시각화
 
 #### 💾 인천시 이벤트 댓글 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/incheon)
-+ 📃 내용 정리 [[notion]](https://www.notion.so/af8ebd471778439eb7be4b770fda9f94)
++ 설명서 📃 [[notion]](https://www.notion.so/7aa007e411a64978938757ef4905f3f8)
++ 내용 정리 📃 [[notion]](https://www.notion.so/af8ebd471778439eb7be4b770fda9f94)
 + 네이버 블로그 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/naver_blog.ipynb)
 + 페이스북 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/facebook.ipynb)
 + 인스타 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/insta.ipynb)
-+ 엑셀 파일 너비 조정(수정 중...⏳) [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/manage_excel_file.ipynb)
++ ~엑셀 파일 너비 조정~
