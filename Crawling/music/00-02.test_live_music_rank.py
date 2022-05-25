@@ -716,4 +716,4 @@ ky_crawling() #7
 tj_crawling() #8
 
 # 종료 메세지
-msg = ctypes.windll.user32.MessageBoxW(None, '파일 실행 완료.', '알림', 0)
+# msg = ctypes.windll.user32.MessageBoxW(None, '파일 실행 완료.', '알림', 0)
