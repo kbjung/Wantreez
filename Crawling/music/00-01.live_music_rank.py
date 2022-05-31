@@ -681,13 +681,13 @@ def tj_crawling():
 
 # 일정 시간마다 반복
 job1 = schedule.every().day.at("11:01").do( bugs_crawling )
-job2 = schedule.every().day.at("11:02").do( flo_crawling )
-job3 = schedule.every().day.at("11:03").do( genie_crawling )
-job4 = schedule.every().day.at("11:04").do( melon_crawling )
-job5 = schedule.every().day.at("11:05").do( vibe_crawling )
-job6 = schedule.every().day.at("11:06").do( soribada_crawling )
-job7 = schedule.every().day.at("11:07").do( ky_crawling )
-job8 = schedule.every().day.at("11:08").do( tj_crawling )
+job2 = schedule.every().day.at("11:01").do( flo_crawling )
+job3 = schedule.every().day.at("11:01").do( genie_crawling )
+job4 = schedule.every().day.at("11:01").do( melon_crawling )
+job5 = schedule.every().day.at("11:01").do( vibe_crawling )
+job6 = schedule.every().day.at("11:01").do( soribada_crawling )
+job7 = schedule.every().day.at("11:01").do( ky_crawling )
+job8 = schedule.every().day.at("11:01").do( tj_crawling )
 
 # count = 0
 
