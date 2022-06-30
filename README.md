@@ -11,7 +11,7 @@
 + 경기관광포털 사진 다운 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/crawling_pic(ggtour).ipynb)
 + 국가문화유산 사진 다운 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/crawling_pic(heritage).ipynb)
 
-#### 💾 2022년 음원 사이트 Top100 & 소셜 미디어 데이터 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
+#### 💾 2022년 음원 사이트 Top100 & 소셜 미디어 데이터 수집, 분석, 시각화 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
 + 설명서 📃 [[notion]](https://www.notion.so/debe145a50054ac088fb83d767a2ccaa)
 + 내용 정리 📃 [[notion]](https://www.notion.so/2ca2f19dfdd54028b263e2f41760f602)
 + 6개 음원 사이트 자동 수집 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/00-01.live_music_rank.py)
