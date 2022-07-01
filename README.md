@@ -3,7 +3,7 @@
 
 ### 🐈 Crawling [[상세내용]](https://github.com/kbjung/Wantreez/tree/main/Crawling)
 
-#### 💾 2022년 음원 사이트 Top100 & 소셜 미디어 데이터 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
+#### 💾 2022년 음원 사이트 Top100 & 소셜 미디어 데이터 수집 & 분석 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
 + 내용 정리 ✍ [[notion]](https://www.notion.so/9b207b18803c4d6ea36e9906ca4777e4)
 + 설명서 📃 [[notion]](https://www.notion.so/debe145a50054ac088fb83d767a2ccaa)
 + 6개 음원 사이트 자동 수집 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
