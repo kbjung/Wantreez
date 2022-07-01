@@ -1,6 +1,6 @@
 ## 💾 인천시 이벤트 댓글 데이터 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/incheon)
-+ 설명서 📃 [[notion]](https://www.notion.so/7aa007e411a64978938757ef4905f3f8)
 + 내용 정리 📃 [[notion]](https://www.notion.so/af8ebd471778439eb7be4b770fda9f94)
++ 설명서 📃 [[notion]](https://www.notion.so/7aa007e411a64978938757ef4905f3f8)
 + 네이버 블로그
   - 테스트 코드 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/test_naver_blog.ipynb)
   - 이벤트 글 테스트 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/naver_blog.ipynb)
