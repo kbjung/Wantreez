@@ -1,5 +1,5 @@
 ## 💾 2022년 음원 사이트 Top100 & 소셜 미디어 데이터 수집, 분석, 시각화 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
-+ 내용 정리 📃 [[notion]](https://www.notion.so/9b207b18803c4d6ea36e9906ca4777e4)
++ 내용 정리 ✍ [[notion]](https://www.notion.so/9b207b18803c4d6ea36e9906ca4777e4)
 
 ### 음원 데이터 수집
 + 6개 음원 사이트
