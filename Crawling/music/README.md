@@ -1,7 +1,7 @@
 # 💾 음원사재기 모니터링 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
 
 ## 📃 업무 정보
-+ 내용 정리 ✍ [[notion]](https://www.notion.so/9b207b18803c4d6ea36e9906ca4777e4)
++ 수행 내용 정리 ✍ [[notion]](https://www.notion.so/9b207b18803c4d6ea36e9906ca4777e4)
 + 발주처 : 한국콘텐츠진흥원
 + 주제 : 국내 음원 사재기 방지를 위한 데이터 수집 및 분석
 + 기간
