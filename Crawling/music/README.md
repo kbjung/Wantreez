@@ -12,7 +12,7 @@
 + Soribada : 실시간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_soribada.ipynb) / 실시간 자동 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_soribada.py) / 과거 일간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/day_soribada.ipynb) / 과거 주간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/week_soribada.ipynb) / 과거 월간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/month_soribada.ipynb)
 
 ### 리포트 작성 코드(분석, 시각화)
-+ 설명서 📃 [[notion]](https://www.notion.so/debe145a50054ac088fb83d767a2ccaa)
++ 코드 설명서 📃 [[notion]](https://www.notion.so/debe145a50054ac088fb83d767a2ccaa)
 + 데이터 전처리
   - 01\. 추가된 가수 확인 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/01.new_artist.ipynb)
   - 02\. 수집 데이터에 소속사 추가 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/02.add_agency.ipynb)
