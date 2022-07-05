@@ -1,4 +1,4 @@
-# 💾 2022년 경기도 해외 SNS 게시글 데이터 수집  [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido)
+# 💾 경기도 해외 SNS 게시글 데이터 수집  [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido)
 
 ## 📃 과업 정보
 + 주제 : 업로드 게시글 데이터 수집
