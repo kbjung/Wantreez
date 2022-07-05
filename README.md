@@ -5,9 +5,9 @@
 
 #### 💾 음원사재기 모니터링 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
 + 내용 정리 ✍ [[notion]](https://www.notion.so/9b207b18803c4d6ea36e9906ca4777e4)
-+ 설명서 📃 [[notion]](https://www.notion.so/debe145a50054ac088fb83d767a2ccaa)
-+ 6개 음원 사이트 자동 수집 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_music_rank.py)
-+ 데이터 전처리, 분석 및 시각화
++ 코드 설명서 📃 [[notion]](https://www.notion.so/debe145a50054ac088fb83d767a2ccaa)
++ 역할 : 수행 팀 리더
++ 주요 업무 : 데이터 수집, 전처리, 분석 및 시각화
 
 #### 💾 인천시 이벤트 댓글 데이터 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/incheon)
 + 내용 정리 ✍ [[notion]](https://www.notion.so/3936885a648a4134b5edac352eeb1ad4)
