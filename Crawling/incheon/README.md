@@ -21,7 +21,7 @@
 - IDE : VSCode, Jupyter Notebook
 - 라이브러리 : BeautifulSoup, Selenium, Pandas 등
 
-## 코드
+## ⚙ 코드
 + 네이버 블로그
   - 테스트 코드 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/test_naver_blog.ipynb)
   - 이벤트 글 테스트 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/incheon/naver_blog.ipynb)
