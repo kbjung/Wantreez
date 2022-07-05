@@ -1,7 +1,7 @@
 # 💾 인천시 이벤트 댓글 데이터 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/incheon)
 
 ## 📃 과업 정보
-+ 주제 : 이벤트 게시글 댓글 정보 수집
++ 주요 업무 : 이벤트 게시글 댓글 정보 수집
 + 기간 : 비정기적
   - 수행 : 약 2개월(2022.04 ~ 05)
   
