@@ -12,9 +12,9 @@
   - 3개 소셜 미디어(Naver blog, Facebook, Instagram) 이벤트 게시글의 댓글 정보 수집
   - 수집한 데이터 xlsx 파일로 저장 및 제공
 + 사이트
-- 네이버 블로그 [링크](https://blog.naver.com/PostList.nhn?blogId=icouncil103&categoryNo=9&from=postList&parentCategoryNo=9)
-- 페이스북 [링크](https://www.facebook.com/incheoncouncil/?ref=page_internal)
-- 인스타그램 [링크](https://www.instagram.com/icouncil103/)
+  - 네이버 블로그 [링크](https://blog.naver.com/PostList.nhn?blogId=icouncil103&categoryNo=9&from=postList&parentCategoryNo=9)
+  - 페이스북 [링크](https://www.facebook.com/incheoncouncil/?ref=page_internal)
+  - 인스타그램 [링크](https://www.instagram.com/icouncil103/)
 
 ### 🔧 활용 기술
 - 언어 : Python
