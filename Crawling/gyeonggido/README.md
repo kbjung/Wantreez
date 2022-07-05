@@ -1,6 +1,28 @@
-## 💾 2022년 경기도 해외 SNS 게시글 데이터 수집  [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido)
+# 💾 2022년 경기도 해외 SNS 게시글 데이터 수집  [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido)
+
+## 📃 과업 정보
++ 주제 : 업로드 게시글 데이터 수집
++ 기간 : 매주
+  - 수행 : 2022.03 ~ 2022.04(약 2개월)
+  
+## 📌 수행 업무 내용
 + 내용 정리 ✍ [[notion]](https://www.notion.so/SNS-da3d2d48a900455bbd0270df0b338b41)
 + 코드 설명서 📃 [[notion]](https://www.notion.so/5f7b9484d2b14e54b0e4111e6a047ffd)
++ 데이터 수집 및 백업
+  - 경기도 공식 해외 소셜 미디어(Google blog, Facebook, Instagram, Weibo) 게시글 데이터 수집
+  - 수집한 데이터 xlsx, csv 파일로 저장 및 제공
++ 사이트
+  - 구글 블로그 [링크](https://www.gyeonggido-korea.com/)
+  - 페이스북 [링크](https://www.facebook.com/GyeonggiKorea.en)
+  - 인스타그램 [링크](https://www.instagram.com/gyeonggi_korea/)
+  - 웨이보 [링크](https://weibo.com/p/1001066011831795/home?from=page_100106&mod=TAB#place)
+
+## 🔧 활용 기술
+- 언어 : Python
+- IDE : VSCode, Jupyter Notebook
+- 라이브러리 : BeautifulSoup, Selenium, Pandas 등
+
+## 코드
 + Blog [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/blog_crawling.ipynb)
   - 게시글 날짜, 제목, 링크 수집
   - 조회수, 좋아요 수, 공유 수, 댓글 수, 팔로워 수 는 '0' 값으로 채운 특성으로 만듬.(없는 정보)
