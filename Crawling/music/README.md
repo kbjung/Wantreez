@@ -1,7 +1,41 @@
-## 💾 2022년 음원 사이트 Top100 & 소셜 미디어 데이터 수집 & 분석 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
-+ 내용 정리 ✍ [[notion]](https://www.notion.so/9b207b18803c4d6ea36e9906ca4777e4)
+# 💾 음원사재기 모니터링 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
 
-### 음원 데이터 수집
+## 업무 정보
++ 내용 정리 ✍ [[notion]](https://www.notion.so/9b207b18803c4d6ea36e9906ca4777e4)
++ 발주처 : 한국콘텐츠진흥원
++ 주제 : 국내 음원 사재기 방지를 위한 데이터 수집 및 분석
++ 기간
+  - 과업 : 7개월(2022.05~2022.12)
+  - 수행 : 2개월(2022.04~2022.05)
++ 보고서
+  - 주간 보고서 : 매주 금요일 제출
+  - 월간 보고서 : 매주 3주 금요일 제출
+  - 중간 보고 : 발주처와 일정 조율
+  - 최종 보고서 : 과업 종료일 제출
+
+## 📌 역할
++ 수행 팀 리더
+  - 일정 배분, 데이터 수집&분석 수행 및 검토, 보고서 작성 및 검토
+  - 의사소통 및 의견 조율
++ 데이터 수집 & 분석 주요 항목
+  - 국내 6개(Bugs, Flo, Genie, Melon, Soribada, Vibe), 해외 1개(Youtube Music), 노래방 사이트 2개(금영, TJ) Top100 음원 데이터 수집.
+  - 매일 오전 11시 데이터 자동 수집 프로그램 작성 및 활용
+  - 수집한 데이터 백업
+  - 음원 순위 변동 분석을 통한 급상승 음원 추출
+  - 급상승 음원의 소셜 미디어 관심도 시각화
+  - 급상승 음원의 순위 변동과 소셜 미디어 관심도 비교를 통한 순위 급상승 타당성 평가
+  - Top100 음원 순위 변동 시각화
+  - 신규 진입 음원 데이터 수집 & 기록
+  - 노래방 신규 진입 음원의 소셜 미디어 관심도 시각화
++ 보고서
+  - 목차 수정 및 작성
+  - 수집한 데이터 종합 및 수정
+  - 분석 내용 종합 및 작성
+  
+## 🔧 활용 기술(Python)
++ Pandas, Selenium, BeutifulSoup, Request, Matplotlib.pyplot 등
+
+## 음원 데이터 수집
 + 6개 음원 사이트
   - 실시간 자동(매일 1번 자동 실행) [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/00-01.live_music_rank.py)
 + Melon : 실시간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_melon.ipynb) / 실시간 자동 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_melon.py) / 과거 주간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/week_melon.ipynb) / 과거 월간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/month_melon.ipynb)
@@ -11,7 +45,7 @@
 + Bugs : 실시간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_bugs.ipynb) / 실시간 자동 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_bugs.py) / 과거 일간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/day_bugs.ipynb) / 과거 주간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/week_bugs.ipynb)
 + Soribada : 실시간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_soribada.ipynb) / 실시간 자동 [py](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/live_soribada.py) / 과거 일간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/day_soribada.ipynb) / 과거 주간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/week_soribada.ipynb) / 과거 월간 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/month_soribada.ipynb)
 
-### 리포트 작성 코드(분석, 시각화)
+## 리포트 작성 코드(분석, 시각화)
 + 코드 설명서 📃 [[notion]](https://www.notion.so/debe145a50054ac088fb83d767a2ccaa)
 + 데이터 전처리
   - 01\. 추가된 가수 확인 [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/music/01.new_artist.ipynb)
