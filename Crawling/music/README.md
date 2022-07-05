@@ -33,7 +33,8 @@
   - 분석 내용 종합 및 작성
   
 ## 🔧 활용 기술(Python)
-+ Pandas, Selenium, BeutifulSoup, Request, Matplotlib.pyplot 등
++ 데이터 수집 : Pandas, Selenium, BeutifulSoup, Request 등
++ 분석 및 시각화 : Matplotlib.pyplot, Seaborn 
 
 ## 음원 데이터 수집
 + 6개 음원 사이트
