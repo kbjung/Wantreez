@@ -1,7 +1,7 @@
 # 💾 경기도 해외 SNS 게시글 데이터 수집  [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido)
 
 ## 📃 과업 정보
-+ 주요  : 업로드 게시글 데이터 수집
++ 주요 업무 : 업로드 게시글 데이터 수집
 + 기간 : 매주
   - 수행 : 2022.03 ~ 2022.04(약 2개월)
   
