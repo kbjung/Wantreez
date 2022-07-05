@@ -14,4 +14,4 @@
 ### 💾 경기도 해외 SNS 게시글 데이터 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido)
 + 수행 내용정리 ✍ [[notion]](https://www.notion.so/SNS-da3d2d48a900455bbd0270df0b338b41)
 + 코드 설명서 📃 [[notion]](https://www.notion.so/5f7b9484d2b14e54b0e4111e6a047ffd)
-+ 주요 업무 : 게시글 데이터 수집
++ 주요 업무 : 업로드 게시글 데이터 수집
