@@ -1,6 +1,6 @@
 # 💾 음원사재기 모니터링 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
 
-## 📃 과제 정보
+## 📃 과업 정보
 + 발주처 : 한국콘텐츠진흥원
 + 주제 : 국내 음원 사재기 방지를 위한 데이터 수집 및 분석
 + 기간
