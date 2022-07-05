@@ -23,7 +23,7 @@
 - IDE : VSCode, Jupyter Notebook
 - 라이브러리 : BeautifulSoup, Selenium, Pandas 등
 
-## 코드
+## ⚙ 코드
 + Blog [ipynb](https://github.com/kbjung/Wantreez/blob/main/Crawling/gyeonggido/blog_crawling.ipynb)
   - 게시글 날짜, 제목, 링크 수집
   - 조회수, 좋아요 수, 공유 수, 댓글 수, 팔로워 수 는 '0' 값으로 채운 특성으로 만듬.(없는 정보)
