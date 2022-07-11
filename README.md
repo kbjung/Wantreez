@@ -1,5 +1,5 @@
-# 💼 Wantreez
-원트리즈 뮤직(2022.03.02 ~ 2022.06.01)
+# 💼 원트리즈 뮤직
+인턴(2022.03.02 ~ 2022.06.01)
 
 ## 🐈 Crawling [[상세내용]](https://github.com/kbjung/Wantreez/tree/main/Crawling)
 
