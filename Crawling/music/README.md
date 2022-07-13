@@ -1,4 +1,4 @@
-# 💾 음원사재기 모니터링 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music)
+# 💾 음원사재기 모니터링 [[상세설명]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music#readme)
 
 ## 📃 과업 정보
 + 발주처 : 한국콘텐츠진흥원
