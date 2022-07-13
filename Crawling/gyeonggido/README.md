@@ -1,4 +1,4 @@
-# 💾 경기도 해외 SNS 게시글 데이터 수집  [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido)
+# 💾 경기도 해외 SNS 게시글 데이터 수집  [[상세설명]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido#readme)
 
 ## 📃 과업 정보
 + 주요 업무 : 업로드 게시글 데이터 수집
