@@ -1,4 +1,4 @@
-# 💾 인천시 소셜미디어 이벤트 게시글 데이터 수집 [[폴더]](https://github.com/kbjung/Wantreez/tree/main/Crawling/incheon)
+# 💾 인천시 소셜미디어 이벤트 게시글 데이터 수집 [[상세설명]](https://github.com/kbjung/Wantreez/tree/main/Crawling/incheon#readme)
 
 ## 📃 과업 정보
 + 주요 업무 : 이벤트 게시글 댓글 정보 수집
