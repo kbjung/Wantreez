@@ -16,6 +16,10 @@
   - 페이스북 [링크](https://www.facebook.com/incheoncouncil/?ref=page_internal)
   - 인스타그램 [링크](https://www.instagram.com/icouncil103/)
 
+## 🏆 성과
++ 외주 비용 100% 절감
++ 업무 효율성 500% 
+
 ## 🔧 활용 기술
 - 언어 : Python
 - IDE : VSCode, Jupyter Notebook
