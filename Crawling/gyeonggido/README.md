@@ -18,6 +18,9 @@
   - 인스타그램 [링크](https://www.instagram.com/gyeonggi_korea/)
   - 웨이보 [링크](https://weibo.com/p/1001066011831795/home?from=page_100106&mod=TAB#place)
 
+## 🏆 성과
++ 업무 효율 300% 증가
+
 ## 🔧 활용 기술
 - 언어 : Python
 - IDE : VSCode, Jupyter Notebook
