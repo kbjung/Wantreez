@@ -13,7 +13,7 @@
   - 최종 보고서 : 과업 종료일 제출
 
 ## 📌 수행 업무 내용
-+ 수행 내용 정리 ✍ [[notion]](https://www.notion.so/9b207b18803c4d6ea36e9906ca4777e4)
++ 수행 내용 정리 ✍ [[notion]](https://www.notion.so/ff85b4ade1b94280819a4ebfbd9a6abf#9b207b18803c4d6ea36e9906ca4777e4)
 + 수행 팀 리더 📢
   - 일정 배분, 데이터 수집&분석 수행 및 검토, 보고서 작성 및 검토
   - 의사소통 및 의견 조율
