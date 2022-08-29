@@ -1,5 +1,10 @@
 # 💾 경기도 해외 SNS 게시글 데이터 수집  [[상세설명]](https://github.com/kbjung/Wantreez/tree/main/Crawling/gyeonggido#readme)
 
+## 🏆 성과
+- 구글 블로그, 페이스북, 인스타그램, 웨이보 게시글 데이터 수집 및 가공 프로그램 완성
+- 보고서 작성 시간 1/3로 절약 및 데이터 업데이트 효율 향상
+- 게시글용 사진 자동 다운 프로그램 작성으로 업무 효율성 비약적 향상
+
 ## 📃 과업 정보
 + 주요 업무 : 업로드 게시글 데이터 수집
 + 기간 : 매주
@@ -17,11 +22,6 @@
   - 페이스북 [링크](https://www.facebook.com/GyeonggiKorea.en)
   - 인스타그램 [링크](https://www.instagram.com/gyeonggi_korea/)
   - 웨이보 [링크](https://weibo.com/p/1001066011831795/home?from=page_100106&mod=TAB#place)
-
-## 🏆 성과
-- 구글 블로그, 페이스북, 인스타그램, 웨이보 게시글 데이터 수집 프로그램 완성
-- 보고서 작성 시간 1/3로 절약 및 데이터 업데이트 효율 향상
-- 게시글용 사진 자동 다운 프로그램 작성으로 업무 효율성 비약적 향상
 
 ## 🔧 활용 기술
 - 언어 : Python
