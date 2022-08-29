@@ -1,5 +1,10 @@
 # 💾 인천시 소셜미디어 이벤트 게시글 데이터 수집 [[상세설명]](https://github.com/kbjung/Wantreez/tree/main/Crawling/incheon#readme)
 
+## 🏆 성과
+- 네이버 블로그, 페이스북, 인스타그램 이벤트 게시글 댓글 데이터 수집 및 가공 프로그램 완성
+- 업무 효율성 향상
+- 외주 비용 절약
+
 ## 📃 과업 정보
 + 주요 업무 : 이벤트 게시글 댓글 정보 수집
 + 기간 : 비정기적
@@ -15,11 +20,6 @@
   - 네이버 블로그 [링크](https://blog.naver.com/PostList.nhn?blogId=icouncil103&categoryNo=9&from=postList&parentCategoryNo=9)
   - 페이스북 [링크](https://www.facebook.com/incheoncouncil/?ref=page_internal)
   - 인스타그램 [링크](https://www.instagram.com/icouncil103/)
-
-## 🏆 성과
-- 네이버 블로그, 페이스북, 인스타그램 이벤트 게시글 댓글 데이터 수집 프로그램 완성
-- 업무 효율성 향상
-- 외주 비용 절약
 
 ## 🔧 활용 기술
 - 언어 : Python
