@@ -1,7 +1,7 @@
 ## 🐈 Crawling [[상세내용]](https://github.com/kbjung/Wantreez/tree/main/Crawling#readme)
 
 ### 💾 음원사재기 모니터링 [[상세설명]](https://github.com/kbjung/Wantreez/tree/main/Crawling/music#readme)
-+ 수행 내용 정리 ✍ [[notion]](https://www.notion.so/9b207b18803c4d6ea36e9906ca4777e4)
++ 수행 내용 정리 ✍ [[notion]](https://www.notion.so/ff85b4ade1b94280819a4ebfbd9a6abf#9b207b18803c4d6ea36e9906ca4777e4)
 + 코드 설명서 📃 [[notion]](https://www.notion.so/debe145a50054ac088fb83d767a2ccaa)
 + 역할 : 수행 팀 리더 📢
 + 주요 업무 : 데이터 수집, 전처리, 분석 및 시각화
