@@ -16,7 +16,7 @@
 + 데이터 수집 및 백업
   - 경기도 공식 해외 소셜 미디어(Google blog, Facebook, Instagram, Weibo) 게시글 데이터 수집
   - 수집한 데이터 xlsx, csv 파일로 저장 및 제공
-  - 홍보용 사진 다운
+  - 홍보용 사진 자동 다운 프로그램 작성
 + 사이트
   - 구글 블로그 [링크](https://www.gyeonggido-korea.com/)
   - 페이스북 [링크](https://www.facebook.com/GyeonggiKorea.en)
