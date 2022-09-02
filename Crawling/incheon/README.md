@@ -13,7 +13,7 @@
 ## 📌 수행 업무 내용
 + 내용 정리 ✍ [[notion]](https://www.notion.so/3936885a648a4134b5edac352eeb1ad4)
 + 코드 설명서 📃 [[notion]](https://www.notion.so/7aa007e411a64978938757ef4905f3f8)
-+ 데이터 수집 및 제공
++ 데이터 수집 및 가공
   - 3개 소셜 미디어(Naver blog, Facebook, Instagram) 이벤트 게시글의 댓글 정보 수집
   - 수집한 데이터 xlsx 파일로 저장 및 제공
 + 사이트
