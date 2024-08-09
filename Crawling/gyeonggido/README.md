@@ -25,7 +25,7 @@
 
 ## 🔧 활용 기술
 - 언어 : Python
-- IDE : VSCode, Jupyter Notebook
+- 에디터 : VSCode, Jupyter Notebook
 - 라이브러리 : BeautifulSoup, Selenium, Pandas 등
 
 ## ⚙ 코드
