@@ -40,7 +40,7 @@
 
 ## 🔧 활용 기술
 + 언어 : Python
-+ IDE : VSCode, Jupyter Notebook
++ 에디터 : VSCode, Jupyter Notebook
 + 데이터 수집 : Pandas, Selenium, BeutifulSoup, Request 등
 + 분석 및 시각화 : Matplotlib.pyplot, Seaborn 등
 + 실행 파일 제작 : Pyinstaller
